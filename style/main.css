@@ -2,18 +2,22 @@
     --primary-color: #ffeb3b;
     --secondary-color: #042e69;
     --nav-link-color: rgba(28, 28, 28, 0.8);
+    --font-color-1 : #ffffff;
+    --font-color-2: rgb(255 255 255 / .7);
 }
 *{
     margin : 0;
     padding : 0;
 }
 
+/*Start Header Section*/
 .hero-container{
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100vh;
     position: relative;
+    z-index: 1;
 }
 .hero-slider{
     position: absolute;
@@ -200,3 +204,150 @@
        border-radius: 0px;
        color: var(--primary-color);
 }
+/*Start Header Section*/
+.accidents-section{
+    width: 100%;
+    height: 510px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color);
+
+}
+.accidents-container{
+    width: 68%;
+    height: 100%;
+    display:flex;
+}
+.accidents-container-row{
+    width: 100%;
+    display: flex;
+    height: 100%;
+}
+.accidents-container-col-1{
+    width: 40%;
+    height: 100%;
+    position:relative;
+}
+.accidents-container-description-box{
+      width: 100%;
+      height: 87%;
+      position: absolute;
+      top: -120px;
+      left: -70px;
+      z-index: 20;
+      background-color: var(--primary-color);
+      padding: 30px;
+      padding-left: 40px;
+      padding-top: 60px;
+}
+.accidents-container-col-2{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.accidents-container-description-box > p:first-child{
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 40px;
+}
+.accidents-container-description-box > p:nth-child(2){
+    font-size: 36px;
+    color: var(--secondary-color);
+    margin-bottom: 40px;
+    line-height: 1.3em;
+}
+.accidents-container-description-box > p:nth-child(3){
+    font-size: 20px;
+    color: #666666;
+    margin-bottom: 59px;
+    line-height: 1.3em;
+    line-height: 2em
+}
+.accidents-items-row{
+    width: 100%;
+    display:flex;
+}
+.accidents-items-col{
+    width: 100%;
+}
+.accidents-item-row{
+    width: 100%;
+    display: flex;
+}
+
+.accidents-item-icon-col{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.accidents-item-icon-col > img{
+    width: 80px;
+    height: 80px;
+}
+.accidents-item-description-row-1 > h3 {
+       color : var(--font-color-1);
+       font-size: 24px;
+       width: fit-content;
+       padding-bottom: 20px;
+       border-bottom: 2px solid rgb(255 255 255 / .15);
+       margin-bottom: 20px
+}
+.accidents-item-description-row-2 > p {
+      line-height: 2em;
+      font-size: 17px;
+      color: var(--font-color-2);
+      font-weight: 400px;
+}
+
+/*end accidents-section*/
+/*start mission-section*/
+.mission-section{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mission-container{
+    width: 70%;
+    height: 100%;
+    padding: 100px 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.mission-content-row{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items-center;
+    align-items: center;
+}
+.mission-content-row > img {
+    margin-bottom : 30px;
+}
+.mission-content-row > h3{
+    font-size: 24px;
+    margin-bottom: 50px;
+    color: var(--secondary-color);
+}
+.mission-main-description{
+    flex-direction: column;
+    text-align: center;
+}
+.mission-main-description > p:first-child{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.mission-main-description > p:nth-child(2){
+    font-size: 22px;
+    color: #aaaaaa;
+    margin-bottom: 20px;
+}
+/*end mission-section*/
